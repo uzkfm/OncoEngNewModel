@@ -1477,13 +1477,13 @@ AnyFolder OncoEngKineticAnalysis = {
 
 AnyOutputFile OncoEngKineticOutputFileCSV = {
   FileName = Main.Studies.InverseDynamicStudy.ModelEnvironmentConnection.JointsAndDrivers.BaseFileName + "OncoEngSelectedSegmentForcesOutputs.csv";
-  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.ThoracicLoading.ThoracicForces.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.LumbarLoading.LumbarForces.*"}; 
+  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.SegmentLoading.ThoracicLoading.ThoracicForces.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.SegmentLoading.LumbarLoading.LumbarForces.*"}; 
   
 };
 
 AnyOutputFile OncoEngMomentOutputFileCSV = {
   FileName = Main.Studies.InverseDynamicStudy.ModelEnvironmentConnection.JointsAndDrivers.BaseFileName + "OncoEngSelectedSegmentMomentsOutputs.csv";
-  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.ThoracicLoading.ThoracicMoment.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.LumbarLoading.LumbarMoment.*"}; 
+  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.SegmentLoading.ThoracicLoading.ThoracicMoments.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.SegmentLoading.LumbarLoading.LumbarMoments.*"}; 
   
 };
 

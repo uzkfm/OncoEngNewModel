@@ -50,6 +50,17 @@ Main.ModelSetup.LabSpecificData = {
     #include "OncoEng/OncoEngSegmentLoading.any"
   };
 
+// Amplifying the weightage for the spine rhythm
+  Main.HumanModel.BodyModel.Trunk.Joints.Cervical.Flexion.rhythmC2C7 = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Cervical.LateralBending.rhythmC2C7 = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Cervical.Rotation.rhythmC2C7 = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Thorax.ExtensionRhythmDriver = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Thorax.LateralBendingRhythmDriver = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Thorax.AxialRotationRhythmDriver = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SpineRhythmDrvFlexion = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SpineRhythmDrvLatBending = {Weights.Fun.Value = repmat(nDim, 0.15);};
+  Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SpineRhythmDrvRotation = {Weights.Fun.Value = repmat(nDim, 0.15);};
+ 
   /////////////////////////////////////////////////////////////////////////
 
   // Only use a single time step in parameter optimization
